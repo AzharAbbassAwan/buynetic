@@ -1,10 +1,13 @@
 const { Sequelize } = require("sequelize");
 const { db } = require("../../common/databaseConnection");
 var config = require("../../config.json");
+const { User } = require("./user");
 const DBInstance = {};
 config = config.db;
 
-const models = {};
+const models = {
+  User,
+};
 
 db.models = models;
 db.sequelize = db;
