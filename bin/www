@@ -35,7 +35,7 @@ server.on("listening", onListening);
 
 const { db } = require("../model/definition/index");
 // sync db
-// db.sequelize.sync({ alter: true, logging: console.log }).then(() => {
+// db.sequelize.sync({ alter: true }).then(() => {
 //   console.log("Database sync successfully");
 //   server.on("error", onError);
 //   server.on("listening", onListening);
